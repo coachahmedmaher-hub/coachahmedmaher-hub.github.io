@@ -3,30 +3,30 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>Coach Ahmed Maher — لأجل ولادنا ❤️</title>
-<meta name="description" content="لأجل ولادنا: تقييم ومتابعة قوام الأطفال والمراهقين مع Coach Ahmed Maher. احجز تقييم مجاني وتعرف على البرنامج." />
-<meta name="theme-color" content="#EFEEE4" />
+<title>لأجل ولادنا — Coach Ahmed Maher | قوام سليم.. مستقبل أفضل</title>
+<meta name="description" content="مبادرة لأجل ولادنا مع Coach Ahmed Maher: تقييم قوام مجاني لطفلك وبرنامج تصحيح قوام للأطفال والمراهقين من 5 إلى 18 سنة." />
+<meta name="theme-color" content="#F6F8F2" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
 
 <style>
   :root{
-    --bg: #EFEEE4;
+    --navy: #16324A;
+    --navy-deep: #0F2536;
+    --green: #7CAA3F;
+    --green-deep: #5E8A2C;
+    --green-soft: #E7EFDB;
+    --bg: #F6F8F2;
     --surface: #FFFFFF;
-    --ink: #1F2A24;
-    --ink-soft: #5A6560;
-    --primary: #2F6F62;
-    --primary-dark: #234f45;
-    --accent: #E86A4B;
-    --accent-soft: #F7D9A6;
-    --line: #D8D2C2;
+    --ink: #1B2A2E;
+    --ink-soft: #5C6B66;
+    --line: #DDE4D3;
     --radius: 18px;
   }
 
   *{ box-sizing: border-box; }
-
   html{ scroll-behavior: smooth; }
 
   body{
@@ -35,109 +35,106 @@
     color: var(--ink);
     font-family: 'Tajawal', sans-serif;
     -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
-    display:flex;
-    justify-content:center;
   }
 
-  /* subtle grain / paper texture via layered radial gradients */
-  body::before{
-    content:"";
-    position: fixed;
-    inset:0;
-    background:
-      radial-gradient(circle at 15% 8%, rgba(232,106,75,0.10), transparent 40%),
-      radial-gradient(circle at 85% 92%, rgba(47,111,98,0.12), transparent 45%);
-    pointer-events:none;
-    z-index:0;
-  }
+  h1,h2,h3{ font-family:'Almarai', sans-serif; margin:0; }
 
-  .page{
-    width:100%;
-    max-width: 480px;
-    padding: 40px 20px 56px;
-    position: relative;
-    z-index:1;
+  .wrap{ max-width: 640px; margin: 0 auto; padding: 0 20px; }
+
+  a{ text-decoration:none; color:inherit; }
+
+  /* ---------- Top brand bar ---------- */
+
+  .topbar{
+    background: var(--navy);
+    padding: 10px 0;
+    text-align:center;
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.85);
+    letter-spacing:.3px;
   }
+  .topbar b{ color:#fff; }
 
   /* ---------- Hero ---------- */
 
   .hero{
     text-align:center;
-    margin-bottom: 28px;
+    padding: 40px 20px 30px;
+    background: radial-gradient(circle at 50% -10%, var(--green-soft), var(--bg) 60%);
   }
 
-  .avatar{
-    width: 92px;
-    height: 92px;
-    margin: 0 auto 16px;
-    border-radius: 50%;
-    background: linear-gradient(155deg, var(--primary), var(--primary-dark));
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#fff;
-    font-family:'Lalezar', sans-serif;
-    font-size: 34px;
-    letter-spacing: 1px;
-    box-shadow: 0 8px 24px rgba(47,111,98,0.28);
-    border: 4px solid var(--surface);
+  .logo-img{
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+    display:block;
   }
 
-  .brand-name{
-    font-family:'Tajawal', sans-serif;
+  .brand-line{
+    font-size: 13.5px;
     font-weight:700;
-    font-size: 15px;
     color: var(--ink-soft);
-    margin-bottom: 6px;
-    letter-spacing:.3px;
+    letter-spacing:.4px;
+    margin-bottom: 10px;
   }
 
   .campaign-title{
-    font-family: 'Lalezar', sans-serif;
-    font-size: 44px;
-    line-height:1.15;
-    color: var(--primary-dark);
-    margin: 0 0 10px;
+    font-size: 42px;
+    color: var(--navy);
+    line-height:1.2;
+    margin-bottom: 8px;
   }
-
-  .campaign-title .heart{
-    color: var(--accent);
-  }
+  .campaign-title .heart{ color:#D9584B; }
 
   .tagline{
+    font-weight:700;
+    font-size: 16px;
+    color: var(--green-deep);
+    margin-bottom: 14px;
+  }
+
+  .hero-desc{
     font-size: 15.5px;
     color: var(--ink-soft);
-    line-height:1.7;
-    max-width: 360px;
-    margin: 0 auto 14px;
+    line-height:1.8;
+    max-width: 420px;
+    margin: 0 auto 22px;
   }
 
-  .credential{
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    background: var(--surface);
-    border: 1px solid var(--line);
+  .cta-primary{
+    display:inline-block;
+    background: linear-gradient(155deg, var(--green), var(--green-deep));
+    color:#fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 30px;
     border-radius: 999px;
-    padding: 7px 14px;
+    box-shadow: 0 10px 26px rgba(94,138,44,0.32);
+  }
+
+  .cta-note{
     font-size: 12.5px;
     color: var(--ink-soft);
-    font-weight: 500;
+    margin-top: 10px;
   }
 
-  .credential b{ color: var(--primary-dark); font-weight:700; }
+  .cta-secondary-link{
+    display:block;
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--navy);
+    font-weight:700;
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+  }
 
   /* ---------- Concern chips ---------- */
 
   .concerns{
-    display:flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 26px 0 8px;
+    display:flex; justify-content:center; flex-wrap:wrap; gap:8px;
+    margin-top: 22px;
   }
-
   .chip{
     background: var(--surface);
     border: 1px solid var(--line);
@@ -145,267 +142,544 @@
     border-radius: 999px;
     font-size: 13px;
     font-weight: 500;
-    color: var(--ink);
-    display:flex;
-    align-items:center;
-    gap:6px;
   }
 
-  /* ---------- Spine signature divider ---------- */
+  /* ---------- Section shell ---------- */
 
-  .spine-divider{
-    margin: 30px 0 8px;
+  section{ padding: 44px 0; }
+  section.alt{ background: var(--surface); }
+
+  .eyebrow{
+    display:inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--green-deep);
+    background: var(--green-soft);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+
+  h2.section-title{
+    font-size: 25px;
+    color: var(--navy);
+    line-height:1.4;
+    margin-bottom: 18px;
+  }
+
+  /* ---------- Problem list ---------- */
+
+  .problem-list{ display:flex; flex-direction:column; gap:12px; }
+  .problem-item{
+    display:flex; gap:12px; align-items:flex-start;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 14.5px;
+    line-height:1.7;
+  }
+  .problem-item .num{
+    flex-shrink:0;
+    width: 26px; height:26px;
+    border-radius:50%;
+    background: var(--navy);
+    color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-size: 12.5px; font-weight:700;
+  }
+
+  .callout{
+    margin-top: 18px;
+    background: var(--navy);
+    color:#fff;
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 14px;
+    line-height:1.8;
     text-align:center;
   }
+  .callout b{ color: #BFE38A; }
 
-  .spine-divider svg{ width: 100%; max-width: 340px; height: auto; }
+  /* ---------- Vision list ---------- */
 
-  .spine-caption{
+  .vision-list{ display:flex; flex-direction:column; gap:10px; }
+  .vision-item{
+    display:flex; gap:12px; align-items:flex-start;
+    font-size: 14.5px; line-height:1.7;
+    padding: 4px 0;
+  }
+  .vision-item .tick{
+    flex-shrink:0; color: var(--green-deep); font-weight:900; font-size:16px;
+  }
+
+  /* ---------- Spine divider ---------- */
+
+  .spine-divider{ text-align:center; margin: 6px 0 0; }
+  .spine-divider svg{ width:100%; max-width:320px; height:auto; }
+  .spine-caption{ font-size:12.5px; color:var(--ink-soft); margin-top:6px; font-weight:600;}
+  .spine-caption span{ color: var(--green-deep); font-weight:800; }
+
+  /* ---------- Journey steps ---------- */
+
+  .journey{ display:flex; flex-direction:column; gap:14px; }
+  .journey-step{
+    display:flex; gap:14px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px;
+  }
+  .journey-step .step-num{
+    flex-shrink:0;
+    width:38px;height:38px;border-radius:50%;
+    background: var(--green-soft);
+    color: var(--green-deep);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800; font-size:15px;
+  }
+  .journey-step h3{ font-size:15.5px; color:var(--navy); margin-bottom:4px; }
+  .journey-step p{ margin:0; font-size:13.5px; color:var(--ink-soft); line-height:1.7; }
+
+  /* ---------- Suitability ---------- */
+
+  .suit-grid{ display:flex; flex-direction:column; gap:14px; }
+  .suit-card{ border-radius:16px; padding:16px 18px; }
+  .suit-card.yes{ background: var(--green-soft); border: 1px solid #CFE0B4; }
+  .suit-card.no{ background: #FBECE9; border: 1px solid #F2CFC7; }
+  .suit-card h3{ font-size:15px; margin-bottom:10px; }
+  .suit-card.yes h3{ color: var(--green-deep); }
+  .suit-card.no h3{ color: #B4453A; }
+  .suit-card ul{ margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:8px; }
+  .suit-card li{ font-size:13.5px; line-height:1.6; display:flex; gap:8px; }
+  .suit-card.yes li:before{ content:"✓"; color: var(--green-deep); font-weight:900; }
+  .suit-card.no li:before{ content:"✕"; color:#B4453A; font-weight:900; }
+
+  .med-note{
     font-size: 12.5px;
     color: var(--ink-soft);
-    margin-top: 4px;
-    font-weight: 500;
+    line-height:1.8;
+    margin-top: 14px;
+    padding: 12px 14px;
+    border-right: 3px solid var(--navy);
+    background: var(--bg);
+    border-radius: 8px;
   }
 
-  .spine-caption span{ color: var(--primary-dark); font-weight:700; }
-  .spine-caption em{ color: var(--accent); font-style:normal; font-weight:700; }
+  /* ---------- Coach ---------- */
 
-  /* ---------- Link cards ---------- */
-
-  .links{
-    margin-top: 30px;
-    display:flex;
-    flex-direction:column;
-    gap: 14px;
-  }
-
-  .link-card{
-    display:block;
-    text-decoration:none;
-    color: inherit;
-    background: var(--surface);
+  .coach-card{
+    display:flex; gap:16px; align-items:center;
+    background: var(--bg);
     border: 1px solid var(--line);
-    border-radius: var(--radius);
-    padding: 18px 20px;
-    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
-    position:relative;
-    overflow:hidden;
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom:16px;
   }
-
-  .link-card:active{ transform: scale(0.98); }
-
-  .link-card:hover{
-    border-color: var(--primary);
-    box-shadow: 0 10px 28px rgba(31,42,36,0.10);
-  }
-
-  .link-card.primary{
-    background: linear-gradient(155deg, var(--primary), var(--primary-dark));
-    color:#fff;
-    border-color: transparent;
-  }
-
-  .link-card.primary .link-title{ color:#fff; }
-  .link-card.primary .link-desc{ color: rgba(255,255,255,0.82); }
-  .link-card.primary .link-arrow{ background: rgba(255,255,255,0.16); color:#fff; }
-
-  .link-top{
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-between;
-    gap: 12px;
-  }
-
-  .link-title{
-    font-size: 16.5px;
-    font-weight: 700;
-    color: var(--ink);
-    margin: 0 0 4px;
-  }
-
-  .link-desc{
-    font-size: 13px;
-    color: var(--ink-soft);
-    line-height:1.6;
-    margin:0;
-  }
-
-  .link-arrow{
+  .coach-avatar{
     flex-shrink:0;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: var(--accent-soft);
-    color: var(--accent);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size: 16px;
-    transform: scaleX(-1); /* arrow points left in RTL */
+    width:64px;height:64px;border-radius:50%;
+    background: linear-gradient(155deg, var(--navy), var(--navy-deep));
+    color:#fff; display:flex; align-items:center; justify-content:center;
+    font-family:'Almarai',sans-serif; font-weight:800; font-size:22px;
   }
+  .coach-card h3{ font-size:15px; color:var(--navy); margin-bottom:2px; }
+  .coach-card p{ margin:0; font-size:12.5px; color:var(--ink-soft); }
 
-  .badge{
-    display:inline-block;
-    font-size: 10.5px;
+  .coach-story{ font-size:14.5px; line-height:1.8; color: var(--ink); }
+  .coach-story b{ color: var(--navy); }
+
+  /* ---------- FAQ ---------- */
+
+  .faq-item{
+    border-bottom: 1px solid var(--line);
+    padding: 14px 0;
+  }
+  .faq-item summary{
     font-weight:700;
-    background: var(--accent);
+    font-size: 14.5px;
+    color: var(--navy);
+    cursor:pointer;
+    list-style:none;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item summary:after{
+    content:"+";
+    font-size: 20px;
+    color: var(--green-deep);
+    flex-shrink:0;
+    margin-right:10px;
+  }
+  .faq-item[open] summary:after{ content:"–"; }
+  .faq-item p{
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height:1.8;
+    margin: 10px 0 0;
+  }
+
+  /* ---------- Pricing ---------- */
+
+  .price-block{
+    background: linear-gradient(155deg, var(--navy), var(--navy-deep));
     color:#fff;
-    padding: 2px 9px;
-    border-radius: 999px;
-    margin-bottom: 8px;
+    border-radius: 20px;
+    padding: 26px 22px;
+    text-align:center;
+    margin-bottom: 22px;
   }
+  .price-block .eyebrow{ background: rgba(255,255,255,0.12); color:#BFE38A; }
+  .price-block h2{ color:#fff; font-size:21px; margin-bottom:14px; }
 
-  .link-card.primary .badge{
-    background: var(--accent-soft);
-    color: var(--primary-dark);
+  .price-currencies{
+    display:flex; justify-content:center; gap:10px; flex-wrap:wrap;
+    margin: 14px 0 6px;
   }
-
-  /* ---------- Social ---------- */
-
-  .social{
-    display:flex;
-    justify-content:center;
-    gap: 14px;
-    margin-top: 34px;
+  .price-tag{
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 14px;
+    padding: 12px 16px;
+    min-width: 92px;
   }
+  .price-tag .amount{ font-size:22px; font-weight:800; }
+  .price-tag .cur{ font-size:11.5px; color: rgba(255,255,255,0.7); margin-top:2px; }
 
-  .social a{
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
+  .price-note{ font-size:12px; color: rgba(255,255,255,0.72); margin-top:12px; }
+
+  .includes{ margin-top:20px; text-align:right; display:flex; flex-direction:column; gap:8px; }
+  .includes .row{ display:flex; gap:8px; font-size:13px; color: rgba(255,255,255,0.9); }
+  .includes .row:before{ content:"✓"; color:#BFE38A; font-weight:900; }
+
+  /* ---------- Payment methods ---------- */
+
+  .pay-card{
     background: var(--surface);
     border: 1px solid var(--line);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color: var(--primary-dark);
-    text-decoration:none;
-    transition: transform .15s ease, background .15s ease;
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 14px;
+  }
+  .pay-card h3{ font-size:14.5px; color:var(--navy); margin-bottom:10px; }
+  .pay-row{
+    display:flex; justify-content:space-between; align-items:center;
+    font-size: 13px; padding: 6px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .pay-row:last-child{ border-bottom:none; }
+  .pay-row .lbl{ color: var(--ink-soft); }
+  .pay-row .val{ font-weight:700; color: var(--ink); direction:ltr; }
+
+  .qr-wrap{ text-align:center; margin-top:12px; }
+  .qr-wrap img{ width:150px; height:150px; border-radius:12px; border:1px solid var(--line); }
+
+  .wa-btn{
+    display:block; text-align:center;
+    background:#25D366; color:#fff; font-weight:700;
+    border-radius: 12px; padding: 14px; margin-top: 18px;
+    font-size: 15px;
   }
 
-  .social a:hover{
-    background: var(--primary);
-    color:#fff;
-    transform: translateY(-3px);
+  .steps-mini{ display:flex; flex-direction:column; gap:10px; margin: 14px 0; }
+  .steps-mini .s{ display:flex; gap:10px; font-size:13px; color: var(--ink-soft); }
+  .steps-mini .s b{
+    flex-shrink:0; width:22px;height:22px;border-radius:50%;
+    background: var(--green-soft); color: var(--green-deep);
+    display:flex; align-items:center; justify-content:center;
+    font-size:11.5px;
   }
-
-  .social svg{ width:20px; height:20px; }
 
   /* ---------- Footer ---------- */
 
   footer{
     text-align:center;
-    margin-top: 40px;
+    padding: 34px 20px 44px;
     font-size: 11.5px;
     color: var(--ink-soft);
-    letter-spacing:.3px;
-    line-height:1.8;
+    line-height:1.9;
   }
-
-  footer .love{ color: var(--accent); }
-
-  @media (prefers-reduced-motion: reduce){
-    *{ transition:none !important; scroll-behavior:auto !important; }
-  }
+  footer .love{ color:#D9584B; }
 </style>
 </head>
 <body>
 
-<div class="page">
+<div class="topbar">مبادرة <b>لأجل ولادنا</b> · Coach Ahmed Maher</div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="avatar">AM</div>
-    <div class="brand-name">Coach Ahmed Maher</div>
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <img class="logo-img" src="logo.png" alt="لأجل ولادنا - Coach Ahmed Maher" />
+    <div class="brand-line">COACH AHMED MAHER · POSTURE · HEALTH · FUTURE</div>
     <h1 class="campaign-title">لأجل ولادنا <span class="heart">❤️</span></h1>
-    <p class="tagline">
-      نقيّم قوام طفلك بدري، ونساعدك تكتشف وتصحح مشاكل الجلوس والانحناء
-      قبل ما تتحول لعادة بتكبر معاه.
+    <div class="tagline">قوام سليم.. مستقبل أفضل</div>
+    <p class="hero-desc">
+      مبادرة موجّهة للأهالي لاكتشاف مشاكل قوام الأطفال والمراهقين بدري،
+      وتصحيحها بخطوات عملية وواضحة — قبل ما تتحول لعادة تكبر مع طفلك.
     </p>
-    <div class="credential">
-      🩺 <b>Ahmed Maher</b> · مدرب تأهيل حركي للأطفال والمراهقين
+
+    <a class="cta-primary" href="https://wa.me/971562723518?text=السلام%20عليكم،%20عايز/ة%20أطلب%20تقييم%20قوام%20مجاني%20لطفلي%20❤️" target="_blank" rel="noopener">
+      احجزي تقييم قوام مجاني لطفلك
+    </a>
+    <div class="cta-note">التقييم مجاني 100% وبدون أي التزام بالبرنامج بعده</div>
+    <a class="cta-secondary-link" href="#program">تعرف على تفاصيل البرنامج ↓</a>
+
+    <div class="concerns">
+      <span class="chip">📱 الموبايل والتابلت</span>
+      <span class="chip">🎮 البلايستيشن</span>
+      <span class="chip">🪑 الجلوس الغلط لساعات</span>
     </div>
-  </section>
-
-  <!-- Concern chips -->
-  <div class="concerns">
-    <span class="chip">📱 الموبايل والتابلت</span>
-    <span class="chip">🎮 البلايستيشن</span>
-    <span class="chip">🪑 الجلوس الغلط</span>
   </div>
+</section>
 
-  <!-- Spine signature divider -->
-  <div class="spine-divider">
-    <svg viewBox="0 0 340 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <!-- slouched curve fading into straight, upright curve -->
-      <path d="M10 20 C 60 55, 110 55, 150 35 C 175 22, 185 22, 200 30"
-            stroke="var(--accent)" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.85"/>
-      <path d="M200 30 C 225 42, 260 12, 330 14"
-            stroke="var(--primary)" stroke-width="4" stroke-linecap="round" fill="none"/>
-      <circle cx="10" cy="20" r="5" fill="var(--accent)"/>
-      <circle cx="330" cy="14" r="5" fill="var(--primary)"/>
-    </svg>
-    <div class="spine-caption"><em>من الانحناء اليومي</em> ← <span>لقوام مستقيم وثقة أكبر</span></div>
+<!-- Problem -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">هل ده بيوصف حالة طفلك؟</span>
+    <h2 class="section-title">علامات كتير من الأهالي بيلاحظوها.. ومعظمهم بيأجّلوا التصرف</h2>
+
+    <div class="problem-list">
+      <div class="problem-item"><span class="num">1</span><span>طفلك بيقعد على الموبايل أو التابلت أو البلايستيشن ساعات طويلة يومياً، وأنتِ حاسة إن ده أكتر من اللازم.</span></div>
+      <div class="problem-item"><span class="num">2</span><span>بدأتِ تلاحظي إنه بينحني وهو قاعد أو واقف، أو كتافه بقت لقدام أكتر من طبيعي.</span></div>
+      <div class="problem-item"><span class="num">3</span><span>اشتكى قبل كده من ألم في الرقبة أو الظهر، رغم إنه لسه صغير في السن.</span></div>
+      <div class="problem-item"><span class="num">4</span><span>حاولتِ تصلحي له جلسته بالكلام والتنبيه المستمر، بس النتيجة مؤقتة وترجع تاني بعد دقايق.</span></div>
+      <div class="problem-item"><span class="num">5</span><span>قلقانة إن المشكلة تكبر معاه وتأثر على ثقته بنفسه وشكل جسمه وهو بيكبر.</span></div>
+      <div class="problem-item"><span class="num">6</span><span>مش متأكدة الفرق بين "عادة غلط ممكن تتصحح بسهولة" و"مشكلة فعلية محتاجة تدخل متخصص".</span></div>
+    </div>
+
+    <div class="callout">
+      لو أي حاجة من دي بتحصل في بيتك.. إنتِ <b>لستِ الوحيدة</b>، وأغلب هذه العلامات
+      ممكن تتحل بخطوات بسيطة لو اكتُشفت بدري.
+    </div>
   </div>
+</section>
 
-  <!-- Links -->
-  <div class="links">
+<!-- Vision -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">الصورة المستهدفة</span>
+    <h2 class="section-title">تخيّلي طفلك بعد كده يبقى:</h2>
 
-    <a class="link-card primary" href="#" target="_blank" rel="noopener">
-      <div class="link-top">
+    <div class="vision-list">
+      <div class="vision-item"><span class="tick">✓</span><span>بيقعد ويقف بشكل سليم من غير ما تفضلي تصلحيله كل شوية.</span></div>
+      <div class="vision-item"><span class="tick">✓</span><span>واثق من شكله وقامته وسط زمايله في المدرسة.</span></div>
+      <div class="vision-item"><span class="tick">✓</span><span>بعيد عن آلام الرقبة والظهر من دلوقتي، مش لما يكبر ويتأخر الحل.</span></div>
+      <div class="vision-item"><span class="tick">✓</span><span>اكتسب عادات حركية صحية هتفضل معاه طول عمره، مش حل مؤقت.</span></div>
+      <div class="vision-item"><span class="tick">✓</span><span>وإنتِ حاسة بالراحة إنك تصرفتِ بدري، بدل ما تندمي بعدين على التأجيل.</span></div>
+    </div>
+
+    <div class="spine-divider">
+      <svg viewBox="0 0 320 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M10 18 C 55 48, 100 48, 135 32 C 158 22, 168 22, 182 28" stroke="#D9584B" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.8"/>
+        <path d="M182 28 C 205 38, 235 12, 300 13" stroke="#5E8A2C" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <circle cx="10" cy="18" r="5" fill="#D9584B"/>
+        <circle cx="300" cy="13" r="5" fill="#5E8A2C"/>
+      </svg>
+      <div class="spine-caption">من انحناء يومي بيتراكم ← <span>لقوام سليم وثقة بتكبر مع طفلك</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Program journey -->
+<section class="alt" id="program">
+  <div class="wrap">
+    <span class="eyebrow">إزاي بنشتغل مع طفلك؟</span>
+    <h2 class="section-title">رحلة "لأجل ولادنا" — من التقييم لحد التحسن الملموس</h2>
+
+    <div class="journey">
+      <div class="journey-step">
+        <div class="step-num">1</div>
         <div>
-          <span class="badge">الأكثر طلباً</span>
-          <p class="link-title">احجز تقييم قوام مجاني لطفلك</p>
-          <p class="link-desc">تقييم سريع أونلاين يوضح وضع قوام طفلك الحالي وأول خطوة عملية للتصحيح.</p>
+          <h3>تقييم قوام مجاني</h3>
+          <p>تبعتي فيديو قصير أو تمليي استمارة بسيطة عن وضع طفلك، وكابتن أحمد يراجعها ويطلعك بالملاحظات الأولية.</p>
         </div>
-        <div class="link-arrow">➜</div>
       </div>
-    </a>
-
-    <a class="link-card" href="#" target="_blank" rel="noopener">
-      <div class="link-top">
+      <div class="journey-step">
+        <div class="step-num">2</div>
         <div>
-          <p class="link-title">برنامج "لأجل ولادنا"</p>
-          <p class="link-desc">متابعة وتصحيح قوام كاملة، أونلاين أو حضوري، بخطوات مبنية على حالة طفلك.</p>
+          <h3>خطة تصحيح منزلية مخصصة</h3>
+          <p>لو البرنامج مناسب لحالة طفلك، بيتحدد له تمارين وتعديلات بسيطة يعملها في البيت، بمتابعتك أنتِ كولية أمر.</p>
         </div>
-        <div class="link-arrow">➜</div>
       </div>
-    </a>
-
-    <a class="link-card" href="#" target="_blank" rel="noopener">
-      <div class="link-top">
+      <div class="journey-step">
+        <div class="step-num">3</div>
         <div>
-          <p class="link-title">دليل مجاني: ٥ علامات تدل إن طفلك محتاج تقييم</p>
-          <p class="link-desc">علامات بسيطة تقدر تلاحظها في البيت، وخطوات أولى قبل ما تحجز أي تقييم.</p>
+          <h3>متابعة دورية مع Coach Ahmed Maher</h3>
+          <p>مراجعة دورية لتقدم طفلك (أونلاين)، وتعديل الخطة حسب استجابته، بدل ما تفضلي وحدك في التصحيح.</p>
         </div>
-        <div class="link-arrow">➜</div>
       </div>
-    </a>
-
+      <div class="journey-step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>تقييم ختامي ومقارنة قبل / بعد</h3>
+          <p>نقيس التحسن بالفعل، بمقارنة واضحة، مش بمجرد إحساس إن "شكله بقى أحسن شوية".</p>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <!-- Social -->
-  <div class="social">
-    <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.07 1.25.07 1.62.07 4.85s0 3.6-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.25.07-1.62.07-4.85.07s-3.6 0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.07-1.25-.07-1.62-.07-4.85s0-3.6.07-4.85C2.38 3.96 3.9 2.42 7.15 2.27 8.4 2.2 8.77 2.2 12 2.2zm0 1.8c-3.17 0-3.55 0-4.79.07-2.43.11-3.5 1.2-3.62 3.62C3.53 8.93 3.53 9.3 3.53 12s0 3.07.06 4.31c.12 2.43 1.19 3.51 3.62 3.62 1.24.07 1.62.07 4.79.07s3.55 0 4.79-.07c2.42-.11 3.5-1.19 3.62-3.62.06-1.24.06-1.62.06-4.31s0-3.07-.06-4.31c-.12-2.42-1.2-3.51-3.62-3.62-1.24-.07-1.62-.07-4.79-.07zm0 3.6a4.4 4.4 0 1 1 0 8.8 4.4 4.4 0 0 1 0-8.8zm0 1.8a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2zm4.6-2.15a1.03 1.03 0 1 1 0 2.06 1.03 1.03 0 0 1 0-2.06z"/></svg>
-    </a>
-    <a href="#" target="_blank" rel="noopener" aria-label="TikTok">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 2h2.6c.2 1.4.9 2.6 2 3.4 1 .8 2.2 1.2 3.4 1.3v2.7c-1.5 0-3-.4-4.3-1.2v6.7c0 3.4-2.8 6.1-6.2 6.1S5.8 18.3 5.8 14.9c0-3.3 2.6-6 5.9-6.1v2.8c-1.7.1-3.1 1.5-3.1 3.3 0 1.8 1.5 3.3 3.4 3.3s3.4-1.5 3.4-3.3V2z"/></svg>
-    </a>
-    <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.6c-.2-1-1-1.8-2-2C17.9 5.2 12 5.2 12 5.2s-5.9 0-7.6.4c-1 .2-1.8 1-2 2C2 9.3 2 12 2 12s0 2.7.4 4.4c.2 1 1 1.8 2 2 1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4c1-.2 1.8-1 2-2 .4-1.7.4-4.4.4-4.4s0-2.7-.4-4.4zM10 15.3V8.7l6 3.3-6 3.3z"/></svg>
-    </a>
-    <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.2.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.2-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/></svg>
+<!-- Suitability -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">وضوح تام</span>
+    <h2 class="section-title">البرنامج ده لمين بالظبط؟</h2>
+
+    <div class="suit-grid">
+      <div class="suit-card yes">
+        <h3>مناسب لطفلك لو:</h3>
+        <ul>
+          <li>عمره بين 5 و18 سنة.</li>
+          <li>لاحظتِ انحناء أو جلوس غلط واضح مرتبط بالموبايل/التابلت/الألعاب.</li>
+          <li>مفيش تشخيص طبي بحالة عضوية في العمود الفقري محتاجة تدخل جراحي.</li>
+          <li>إنتِ مستعدة تتابعي معاه في البيت بخطوات بسيطة وثابتة.</li>
+        </ul>
+      </div>
+      <div class="suit-card no">
+        <h3>لازم تشوفي دكتور أولاً لو:</h3>
+        <ul>
+          <li>طفلك متشخّص بانحناء حاد في العمود الفقري (Scoliosis متقدم).</li>
+          <li>فيه ألم شديد ومستمر، أو تنميل/ضعف في اليدين أو القدمين.</li>
+          <li>حصلت له إصابة أو كسر حديث في الرقبة أو الظهر.</li>
+          <li>مش متأكدة من طبيعة الحالة تماماً.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="med-note">
+      ملحوظة مهمة: هذا برنامج إرشادي لتحسين عادات القوام والحركة، وليس بديلاً عن تقييم طبيب مختص
+      (عظام أو علاج طبيعي أطفال) عند وجود أي حالة طبية أو ألم غير مبرر. في حالة عدم التأكد، دايماً
+      الأفضل نبدأ بزيارة تقييم طبي أولاً.
+    </div>
+  </div>
+</section>
+
+<!-- Coach -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">القصة بدأت منين؟</span>
+    <h2 class="section-title">Coach Ahmed Maher</h2>
+
+    <div class="coach-card">
+      <div class="coach-avatar">AM</div>
+      <div>
+        <h3>Coach Ahmed Maher</h3>
+        <p>Posture · Health · Future — لأجل ولادنا</p>
+      </div>
+    </div>
+
+    <p class="coach-story">
+      شفت أطفال كتير بيقعدوا ساعات طويلة قدام الشاشات من غير ما أهاليهم يحسوا
+      بالتأثير التراكمي على قوامهم، لحد ما تظهر المشكلة واضحة في سن المدرسة أو المراهقة.
+      من هنا بدأت مبادرة <b>"لأجل ولادنا"</b>: أساعد الأهالي يكتشفوا المشكلة بدري،
+      ويتعاملوا معاها بخطوات عملية وواضحة، بدل التنبيه المستمر اللي نتيجته مؤقتة.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">الأسئلة الشائعة</span>
+    <h2 class="section-title">أسئلة بيسألها كل أهل</h2>
+
+    <details class="faq-item" open>
+      <summary>هل التقييم المجاني فيه أي التزام بعده؟</summary>
+      <p>لا. التقييم المجاني هدفه إنك تفهمي وضع طفلك بوضوح. تقرري بعد كده لو حابة تكمّلي بالبرنامج المدفوع أو لأ، بدون أي ضغط.</p>
+    </details>
+    <details class="faq-item">
+      <summary>الفئة العمرية المناسبة للبرنامج إيه؟</summary>
+      <p>البرنامج موجّه للأطفال والمراهقين من 5 إلى 18 سنة، مع تفاوت طبيعي في طريقة الشرح والتمارين حسب عمر الطفل.</p>
+    </details>
+    <details class="faq-item">
+      <summary>هل لازم أعرض طفلي على دكتور قبل البرنامج؟</summary>
+      <p>في الحالات العادية (جلوس غلط/انحناء بسيط) لا يوجد ضرورة. لكن لو فيه ألم شديد، تشخيص سابق بانحناء متقدم، أو أعراض غير طبيعية، لازم تبدأي بزيارة طبيب مختص أولاً — وده بيتوضح أثناء التقييم المجاني نفسه.</p>
+    </details>
+    <details class="faq-item">
+      <summary>البرنامج أونلاين ولا حضوري؟</summary>
+      <p>البرنامج مبني على خطة منزلية تنفذيها مع طفلك في البيت، مع متابعة دورية أونلاين من كابتن أحمد لمراجعة التقدم وتعديل الخطة حسب الحاجة.</p>
+    </details>
+    <details class="faq-item">
+      <summary>إمتى هلاحظ فرق في قوام طفلي؟</summary>
+      <p>العادات البسيطة (زي طريقة الجلوس الواعية) بتبدأ تتحسن من الأسابيع الأولى بالمتابعة، لكن التحسن الملموس في القوام بيحتاج وقت واستمرارية — وده بيبان في مقارنة التقييم الختامي.</p>
+    </details>
+    <details class="faq-item">
+      <summary>ينفع أكتر من طفل في نفس الأسرة يشتركوا؟</summary>
+      <p>أكيد، ولو عندك أكتر من طفل حابة تسجلي بياناتهم، ابعتي على الواتساب وهنرتب التقييم لكل طفل بشكل مستقل.</p>
+    </details>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="alt">
+  <div class="wrap">
+
+    <div class="price-block">
+      <span class="eyebrow">البرنامج الكامل</span>
+      <h2>برنامج تصحيح قوام لطفلك — خطة منزلية + متابعة دورية</h2>
+
+      <div class="price-currencies">
+        <div class="price-tag"><div class="amount">1000</div><div class="cur">جنيه مصري</div></div>
+        <div class="price-tag"><div class="amount">100</div><div class="cur">درهم إماراتي</div></div>
+        <div class="price-tag"><div class="amount">30</div><div class="cur">دولار أمريكي</div></div>
+      </div>
+      <div class="price-note">دفعة واحدة — وصول فوري للخطة بعد تأكيد الدفع</div>
+
+      <div class="includes">
+        <div class="row">تقييم قوام مجاني (خطوة أولى قبل أي دفع)</div>
+        <div class="row">خطة تصحيح منزلية مخصصة لعمر طفلك وحالته</div>
+        <div class="row">متابعة دورية مع Coach Ahmed Maher</div>
+        <div class="row">تقييم ختامي ومقارنة قبل / بعد</div>
+      </div>
+    </div>
+
+    <!-- Payment -->
+    <div class="pay-card">
+      <h3>الدفع عن طريق InstaPay</h3>
+      <div class="pay-row"><span class="lbl">المحفظة</span><span class="val">ahmed.maher.bakri@instapay</span></div>
+      <div class="qr-wrap">
+        <img src="instapay-qr.jpg" alt="InstaPay QR Code" />
+      </div>
+    </div>
+
+    <div class="pay-card">
+      <h3>التحويل البنكي (محلي بالإمارات أو دولي)</h3>
+      <div class="pay-row"><span class="lbl">البنك</span><span class="val">Abu Dhabi Commercial Bank (ADCB)</span></div>
+      <div class="pay-row"><span class="lbl">اسم الحساب</span><span class="val">AHMED MAHER BAKRY HEFNY ABOUELGHEIT</span></div>
+      <div class="pay-row"><span class="lbl">رقم الحساب</span><span class="val">14425954810001</span></div>
+      <div class="pay-row"><span class="lbl">IBAN</span><span class="val">AE890030014425954810001</span></div>
+      <div class="pay-row"><span class="lbl">العملة</span><span class="val">AED</span></div>
+      <div class="pay-row"><span class="lbl">الفرع</span><span class="val">IBD - Business Bay Branch</span></div>
+      <div class="pay-row"><span class="lbl">Swift Code</span><span class="val">ADCBAEAA</span></div>
+    </div>
+
+    <div class="steps-mini">
+      <div class="s"><b>1</b><span>حوّلي المبلغ بالعملة المناسبة ليكِ عن طريق InstaPay أو التحويل البنكي.</span></div>
+      <div class="s"><b>2</b><span>التقطي screenshot واضح لإيصال التحويل.</span></div>
+      <div class="s"><b>3</b><span>ابعتي الإيصال على الواتساب، وهيتم تفعيل خطة طفلك فوراً.</span></div>
+    </div>
+
+    <a class="wa-btn" href="https://wa.me/971562723518?text=السلام%20عليكم،%20حولت%20قيمة%20برنامج%20لأجل%20ولادنا%20وهبعت%20الإيصال" target="_blank" rel="noopener">
+      ✅ ابعتي الإيصال على واتساب
     </a>
   </div>
+</section>
 
-  <footer>
-    Coach Ahmed Maher © 2026 · بكل <span class="love">❤️</span> لأجل ولادنا<br>
-    محتوى تأهيلي مبني على أساس علمي — مش بديل عن استشارة طبيب عند الحاجة
-  </footer>
+<!-- Final CTA -->
+<section>
+  <div class="wrap" style="text-align:center;">
+    <h2 class="section-title" style="margin-bottom:20px;">مش لازم تقرري دلوقتي.. بس ابدأي بالتقييم المجاني</h2>
+    <a class="cta-primary" href="https://wa.me/971562723518?text=السلام%20عليكم،%20عايز/ة%20أطلب%20تقييم%20قوام%20مجاني%20لطفلي%20❤️" target="_blank" rel="noopener">
+      احجزي تقييم قوام مجاني لطفلك
+    </a>
+    <div class="cta-note">كل خطوة صغيرة دلوقتي بتفرق كبير في مستقبل طفلك</div>
+  </div>
+</section>
 
-</div>
+<footer>
+  Coach Ahmed Maher © 2026 · بكل <span class="love">❤️</span> لأجل ولادنا<br>
+  محتوى إرشادي لتحسين عادات القوام والحركة — وليس بديلاً عن تقييم طبيب مختص عند الحاجة
+</footer>
 
 </body>
 </html>
