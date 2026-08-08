@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Coach Ahmed Maher — لأجل ولادنا ❤️</title>
+<meta name="description" content="لأجل ولادنا: تقييم ومتابعة قوام الأطفال والمراهقين مع Coach Ahmed Maher. احجز تقييم مجاني وتعرف على البرنامج." />
+<meta name="theme-color" content="#EFEEE4" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #EFEEE4;
+    --surface: #FFFFFF;
+    --ink: #1F2A24;
+    --ink-soft: #5A6560;
+    --primary: #2F6F62;
+    --primary-dark: #234f45;
+    --accent: #E86A4B;
+    --accent-soft: #F7D9A6;
+    --line: #D8D2C2;
+    --radius: 18px;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Tajawal', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+  }
+
+  /* subtle grain / paper texture via layered radial gradients */
+  body::before{
+    content:"";
+    position: fixed;
+    inset:0;
+    background:
+      radial-gradient(circle at 15% 8%, rgba(232,106,75,0.10), transparent 40%),
+      radial-gradient(circle at 85% 92%, rgba(47,111,98,0.12), transparent 45%);
+    pointer-events:none;
+    z-index:0;
+  }
+
+  .page{
+    width:100%;
+    max-width: 480px;
+    padding: 40px 20px 56px;
+    position: relative;
+    z-index:1;
+  }
+
+  /* ---------- Hero ---------- */
+
+  .hero{
+    text-align:center;
+    margin-bottom: 28px;
+  }
+
+  .avatar{
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: linear-gradient(155deg, var(--primary), var(--primary-dark));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-family:'Lalezar', sans-serif;
+    font-size: 34px;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 24px rgba(47,111,98,0.28);
+    border: 4px solid var(--surface);
+  }
+
+  .brand-name{
+    font-family:'Tajawal', sans-serif;
+    font-weight:700;
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+    letter-spacing:.3px;
+  }
+
+  .campaign-title{
+    font-family: 'Lalezar', sans-serif;
+    font-size: 44px;
+    line-height:1.15;
+    color: var(--primary-dark);
+    margin: 0 0 10px;
+  }
+
+  .campaign-title .heart{
+    color: var(--accent);
+  }
+
+  .tagline{
+    font-size: 15.5px;
+    color: var(--ink-soft);
+    line-height:1.7;
+    max-width: 360px;
+    margin: 0 auto 14px;
+  }
+
+  .credential{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 14px;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+
+  .credential b{ color: var(--primary-dark); font-weight:700; }
+
+  /* ---------- Concern chips ---------- */
+
+  .concerns{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 26px 0 8px;
+  }
+
+  .chip{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+
+  /* ---------- Spine signature divider ---------- */
+
+  .spine-divider{
+    margin: 30px 0 8px;
+    text-align:center;
+  }
+
+  .spine-divider svg{ width: 100%; max-width: 340px; height: auto; }
+
+  .spine-caption{
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  .spine-caption span{ color: var(--primary-dark); font-weight:700; }
+  .spine-caption em{ color: var(--accent); font-style:normal; font-weight:700; }
+
+  /* ---------- Link cards ---------- */
+
+  .links{
+    margin-top: 30px;
+    display:flex;
+    flex-direction:column;
+    gap: 14px;
+  }
+
+  .link-card{
+    display:block;
+    text-decoration:none;
+    color: inherit;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .link-card:active{ transform: scale(0.98); }
+
+  .link-card:hover{
+    border-color: var(--primary);
+    box-shadow: 0 10px 28px rgba(31,42,36,0.10);
+  }
+
+  .link-card.primary{
+    background: linear-gradient(155deg, var(--primary), var(--primary-dark));
+    color:#fff;
+    border-color: transparent;
+  }
+
+  .link-card.primary .link-title{ color:#fff; }
+  .link-card.primary .link-desc{ color: rgba(255,255,255,0.82); }
+  .link-card.primary .link-arrow{ background: rgba(255,255,255,0.16); color:#fff; }
+
+  .link-top{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap: 12px;
+  }
+
+  .link-title{
+    font-size: 16.5px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 4px;
+  }
+
+  .link-desc{
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height:1.6;
+    margin:0;
+  }
+
+  .link-arrow{
+    flex-shrink:0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 16px;
+    transform: scaleX(-1); /* arrow points left in RTL */
+  }
+
+  .badge{
+    display:inline-block;
+    font-size: 10.5px;
+    font-weight:700;
+    background: var(--accent);
+    color:#fff;
+    padding: 2px 9px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+
+  .link-card.primary .badge{
+    background: var(--accent-soft);
+    color: var(--primary-dark);
+  }
+
+  /* ---------- Social ---------- */
+
+  .social{
+    display:flex;
+    justify-content:center;
+    gap: 14px;
+    margin-top: 34px;
+  }
+
+  .social a{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: var(--primary-dark);
+    text-decoration:none;
+    transition: transform .15s ease, background .15s ease;
+  }
+
+  .social a:hover{
+    background: var(--primary);
+    color:#fff;
+    transform: translateY(-3px);
+  }
+
+  .social svg{ width:20px; height:20px; }
+
+  /* ---------- Footer ---------- */
+
+  footer{
+    text-align:center;
+    margin-top: 40px;
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    letter-spacing:.3px;
+    line-height:1.8;
+  }
+
+  footer .love{ color: var(--accent); }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; scroll-behavior:auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="avatar">AM</div>
+    <div class="brand-name">Coach Ahmed Maher</div>
+    <h1 class="campaign-title">لأجل ولادنا <span class="heart">❤️</span></h1>
+    <p class="tagline">
+      نقيّم قوام طفلك بدري، ونساعدك تكتشف وتصحح مشاكل الجلوس والانحناء
+      قبل ما تتحول لعادة بتكبر معاه.
+    </p>
+    <div class="credential">
+      🩺 <b>Ahmed Maher</b> · مدرب تأهيل حركي للأطفال والمراهقين
+    </div>
+  </section>
+
+  <!-- Concern chips -->
+  <div class="concerns">
+    <span class="chip">📱 الموبايل والتابلت</span>
+    <span class="chip">🎮 البلايستيشن</span>
+    <span class="chip">🪑 الجلوس الغلط</span>
+  </div>
+
+  <!-- Spine signature divider -->
+  <div class="spine-divider">
+    <svg viewBox="0 0 340 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- slouched curve fading into straight, upright curve -->
+      <path d="M10 20 C 60 55, 110 55, 150 35 C 175 22, 185 22, 200 30"
+            stroke="var(--accent)" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.85"/>
+      <path d="M200 30 C 225 42, 260 12, 330 14"
+            stroke="var(--primary)" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <circle cx="10" cy="20" r="5" fill="var(--accent)"/>
+      <circle cx="330" cy="14" r="5" fill="var(--primary)"/>
+    </svg>
+    <div class="spine-caption"><em>من الانحناء اليومي</em> ← <span>لقوام مستقيم وثقة أكبر</span></div>
+  </div>
+
+  <!-- Links -->
+  <div class="links">
+
+    <a class="link-card primary" href="#" target="_blank" rel="noopener">
+      <div class="link-top">
+        <div>
+          <span class="badge">الأكثر طلباً</span>
+          <p class="link-title">احجز تقييم قوام مجاني لطفلك</p>
+          <p class="link-desc">تقييم سريع أونلاين يوضح وضع قوام طفلك الحالي وأول خطوة عملية للتصحيح.</p>
+        </div>
+        <div class="link-arrow">➜</div>
+      </div>
+    </a>
+
+    <a class="link-card" href="#" target="_blank" rel="noopener">
+      <div class="link-top">
+        <div>
+          <p class="link-title">برنامج "لأجل ولادنا"</p>
+          <p class="link-desc">متابعة وتصحيح قوام كاملة، أونلاين أو حضوري، بخطوات مبنية على حالة طفلك.</p>
+        </div>
+        <div class="link-arrow">➜</div>
+      </div>
+    </a>
+
+    <a class="link-card" href="#" target="_blank" rel="noopener">
+      <div class="link-top">
+        <div>
+          <p class="link-title">دليل مجاني: ٥ علامات تدل إن طفلك محتاج تقييم</p>
+          <p class="link-desc">علامات بسيطة تقدر تلاحظها في البيت، وخطوات أولى قبل ما تحجز أي تقييم.</p>
+        </div>
+        <div class="link-arrow">➜</div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Social -->
+  <div class="social">
+    <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.07 1.25.07 1.62.07 4.85s0 3.6-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.25.07-1.62.07-4.85.07s-3.6 0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.07-1.25-.07-1.62-.07-4.85s0-3.6.07-4.85C2.38 3.96 3.9 2.42 7.15 2.27 8.4 2.2 8.77 2.2 12 2.2zm0 1.8c-3.17 0-3.55 0-4.79.07-2.43.11-3.5 1.2-3.62 3.62C3.53 8.93 3.53 9.3 3.53 12s0 3.07.06 4.31c.12 2.43 1.19 3.51 3.62 3.62 1.24.07 1.62.07 4.79.07s3.55 0 4.79-.07c2.42-.11 3.5-1.19 3.62-3.62.06-1.24.06-1.62.06-4.31s0-3.07-.06-4.31c-.12-2.42-1.2-3.51-3.62-3.62-1.24-.07-1.62-.07-4.79-.07zm0 3.6a4.4 4.4 0 1 1 0 8.8 4.4 4.4 0 0 1 0-8.8zm0 1.8a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2zm4.6-2.15a1.03 1.03 0 1 1 0 2.06 1.03 1.03 0 0 1 0-2.06z"/></svg>
+    </a>
+    <a href="#" target="_blank" rel="noopener" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 2h2.6c.2 1.4.9 2.6 2 3.4 1 .8 2.2 1.2 3.4 1.3v2.7c-1.5 0-3-.4-4.3-1.2v6.7c0 3.4-2.8 6.1-6.2 6.1S5.8 18.3 5.8 14.9c0-3.3 2.6-6 5.9-6.1v2.8c-1.7.1-3.1 1.5-3.1 3.3 0 1.8 1.5 3.3 3.4 3.3s3.4-1.5 3.4-3.3V2z"/></svg>
+    </a>
+    <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.6c-.2-1-1-1.8-2-2C17.9 5.2 12 5.2 12 5.2s-5.9 0-7.6.4c-1 .2-1.8 1-2 2C2 9.3 2 12 2 12s0 2.7.4 4.4c.2 1 1 1.8 2 2 1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4c1-.2 1.8-1 2-2 .4-1.7.4-4.4.4-4.4s0-2.7-.4-4.4zM10 15.3V8.7l6 3.3-6 3.3z"/></svg>
+    </a>
+    <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.2.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.2-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/></svg>
+    </a>
+  </div>
+
+  <footer>
+    Coach Ahmed Maher © 2026 · بكل <span class="love">❤️</span> لأجل ولادنا<br>
+    محتوى تأهيلي مبني على أساس علمي — مش بديل عن استشارة طبيب عند الحاجة
+  </footer>
+
+</div>
+
+</body>
+</html>
